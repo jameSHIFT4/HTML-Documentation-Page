@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Documentation</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/jameSHIFT4.css" />
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <header><h1>HTML Documentation</h1></header>
+
+      <div class="nav-link-container">
+        <a href="#Introduction_to_HTML" class="nav-link">Introduction to HTML</a>
+        <a href="#HTML_Tags_and_Elements" class="nav-link">HTML Tags and Elements</a>
+        <a href="#HTML_Attributes" class="nav-link">HTML Attributes</a>
+        <a href="#HTML_Forms_and_Input" class="nav-link">HTML Forms and Input</a>
+        <a href="#HTML_Links" class="nav-link">HTML Links</a>
+        <a href="#HTML_Semantic_Elements" class="nav-link">HTML Semantic Elements</a>
+        <!-- TODO: Add more sections -->
+      </div>
+    </nav>
+
+    <main id="main-doc">
+      <section id="Introduction_to_HTML" class="main-section">
+        <header><h2>Introduction to HTML</h2></header>
+
+        <h3>What is HTML?</h3>
+        <p>HTML (HyperText Markup Language) is the standard language used to create web pages. It forms the structure of a webpage by using elements to define content like text, images, and links. HTML is not a programming language but a markup language, which defines the meaning and structure of web content.</p>
+
+        <h3>HTML Documentation Structure</h3>
+        <p>An HTML document is made up of tags, which enclose different types of content. HTML documents typically begin with a <span class="code-snippet">&lt;!DOCTYPE html&gt;</span> declaration, followed by the <span class="code-snippet">&lt;html&gt;</span> element, which contains the entire document.</p>
+
+        <h3>Code Example &lpar;HTML Document Structure&rpar;</h3>
+        <code>
+          <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+     &lt;title&gt;HTML Documentation&lt;/title&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+     &lt;h1&gt;Welcome to HTML!&lt;/h1&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</pre
+          >
+        </code>
+
+        <h3>Key Features of HTM</h3>
+        <ul>
+          <li>Defines structure of web content</li>
+          <li>Uses tags to enclose elements</li>
+          <li>Not case-sensitive</li>
+        </ul>
+      </section>
+
+      <section id="HTML_Tags_and_Elements" class="main-section">
+        <header><h2>HTML Tags and Elements</h2></header>
+
+        <h3>What are HTML Tags?</h3>
+        <p>HTML tags are used to mark up content in a web document. Each HTML tag typically comes in pairs, such as <span class="code-snippet">&lt;p&gt;</span> and <span class="code-snippet">&lt;/p&gt;</span>, where the opening tag begins the element and the closing tag ends it. Some tags, like <span class="code-snippet">&lt;img&gt;</span>, are self-closing.</p>
+
+        <h3>Common HTML Tags</h3>
+        <p>Some of the most commonly used HTML tags include <span class="code-snippet">&lt;p&gt;</span> for paragraphs, <span class="code-snippet">&lt;h1&gt;</span> through <span class="code-snippet">&lt;h6&gt;</span> for headings, and <span class="code-snippet">&lt;a&gt;</span> for links.</p>
+
+        <h3>Code Example &lpar;Basic HTML Tags&rpar;</h3>
+        <code>
+          <pre>
+&lt;h1&gt;This is a Heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+&lt;a href="https://example.com"&gt;This is a link&lt;/a&gt;</pre
+          >
+        </code>
+      </section>
+
+      <section id="HTML_Attributes" class="main-section">
+        <header><h2>HTML Attributes</h2></header>
+
+        <h3>What are HTML Attributes?</h3>
+        <p>HTML attributes provide additional information about elements. They are included in the opening tag and usually come in name/value pairs, such as id="main". Attributes control various aspects of an element, like its size, style, or behavior.</p>
+
+        <h3>Common Attributes</h3>
+        <p>Some widely used attributes include id, class, href (for links), and src (for images).</p>
+
+        <h3>Code Example (Using Attributes)</h3>
+        <code>
+          <pre>
+&lt;a href="https://example.com" target="_blank"&gt;Visit Example&lt;/a&gt;
+&lt;img src="image.jpg" alt="A sample image"&gt;</pre
+          >
+        </code>
+
+        <h3>List of Common HTML Attributes</h3>
+        <ul>
+          <li>id: Unique identifier for an element</li>
+          <li>class: Used to group elements for styling</li>
+          <li>href: Specifies the URL of a link</li>
+          <li>src: Specifies the image source</li>
+        </ul>
+      </section>
+
+      <section id="HTML_Forms_and_Input" class="main-section">
+        <header><h2>HTML Forms and Input</h2></header>
+
+        <h3>What are HTML Forms?</h3>
+        <p>HTML forms are used to collect user input. They can contain various input elements like text fields, checkboxes, radio buttons, and submit buttons. The form's data is sent to a server for processing.</p>
+
+        <h3>Form Elements</h3>
+        <p>Common form elements include <span class="code-snippet">&lt;input&gt;</span>, <span class="code-snippet">&lt;textarea&gt;</span>, <span class="code-snippet">&lt;select&gt;</span>, and <span class="code-snippet">&lt;button&gt;</span>.</p>
+
+        <h3>Code Example (Basic HTML Form)</h3>
+        <code>
+          <pre>
+&lt;form action="/submit" method="POST"&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name"&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</pre
+          >
+        </code>
+      </section>
+
+      <section id="HTML_Links" class="main-section">
+        <header><h2>HTML Links</h2></header>
+
+        <h3>What are HTML Links?</h3>
+        <p>Links in HTML are created using the <span class="code-snippet">&lt;a&gt;</span> (anchor) element. They allow users to navigate from one webpage to another or to a specific section within the same page. Links are defined using the href attribute.</p>
+
+        <h3>Linking to Other Pages</h3>
+        <p>To link to another webpage, include the URL in the href attribute.</p>
+
+        <h3>Code Example (HTML Link)</h3>
+        <code>
+          <pre>&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;</pre>
+        </code>
+
+        <h3>List of Link Types</h3>
+        <ul>
+          margin: auto 0;
+          <li>External Links: <span class="code-snippet">&lt;a href="https://example.com"&gt;</span></li>
+          <li>Internal Links: <span class="code-snippet">&lt;a href="#section"&gt;</span></li>
+          <li>Email Links: <span class="code-snippet">&lt;a href="mailto:someone@example.com"&gt;</span></li>
+        </ul>
+      </section>
+
+      <section id="HTML_Semantic_Elements" class="main-section">
+        <header><h2>HTML Semantic Elements</h2></header>
+
+        <h3>What are Semantic Elements?</h3>
+        <p>Semantic HTML elements clearly describe their meaning in a web document. These elements make webpages more accessible and easier to maintain. Examples include <span class="code-snippet">&lt;header&gt;</span>, <span class="code-snippet">&lt;footer&gt;</span>, <span class="code-snippet">&lt;article&gt;</span>, and <span class="code-snippet">&lt;section&gt;</span>.</p>
+
+        <h3>Common Semantic Elements</h3>
+        <p>Semantic elements help define the structure of a webpage, making it easier for search engines and screen readers to understand the content.</p>
+
+        <h3>Code Example (Semantic Elements)</h3>
+        <code>
+          <pre>
+&lt;header&gt;
+  &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+&lt;/header&gt;
+&lt;article&gt;
+  &lt;p&gt;This is an article about HTML.&lt;/p&gt;
+&lt;/article&gt;
+&lt;footer&gt;
+  &lt;p&gt;&copy; 2024 My Website&lt;/p&gt;
+&lt;/footer&gt;</pre
+          >
+        </code>
+
+        <h3>List of Semantic Elements</h3>
+        <ul>
+          <li><span class="code-snippet">&lt;header&gt;</span>: Defines a header section</li>
+          <li><span class="code-snippet">&lt;footer&gt;</span>: Defines a footer section</li>
+          <li><span class="code-snippet">&lt;article&gt;</span>: Defines an independent piece of content</li>
+          <li><span class="code-snippet">&lt;section&gt;</span>: Defines a section of content</li>
+        </ul>
+      </section>
+
+      <section class="footer">
+        <p>
+          &copy
+          <span class="jame"
+            ><a href="https://github.com/jameSHIFT4">jame<span class="shift4">SHIFT4</span></a></span
+          >
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
